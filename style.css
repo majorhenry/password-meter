@@ -18,6 +18,7 @@ html,body{
   background: #fff;
   padding: 20px 30px;
   border-radius: 5px;
+  margin-top: 2rem;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
@@ -143,7 +144,7 @@ form .text.strong{
   gap: 2rem;
   padding: 20px 30px;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
-  margin: 70px 60px;
+  margin: 70px 60px 1px;
 }
 
 .result-container {
@@ -158,6 +159,7 @@ form .text.strong{
   height: 50px;
   width: 100%;
 }
+
 .result-container #result {
   word-wrap: break-word;
   max-width: calc(100% - 40px);
@@ -196,6 +198,24 @@ form .text.strong{
 .btn-large {
   display: block;
   width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.survey{
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 1rem 4rem 8rem;
+  background-color: rgba(10, 102, 194, 0.5);
+  width: 88%;
+}
+
+.survey a{
+  color: aqua;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
 }
 
 
@@ -218,7 +238,5 @@ form .text.strong{
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    /* padding: 20px 30px;
-    margin: 70px 60px; */
   }
 }
