@@ -12,6 +12,7 @@
 <body>
   <div class="container">
     <header>Password Strength Indicator <br>in HTML CSS & JavaScript</header>
+    <p>Discover the strength of your password</p>
     <form action="#">
       <div class="field">
         <input onkeyup="StrengthChecker()" type="password" placeholder="Type password">
@@ -25,88 +26,94 @@
       <div class="text"></div>
     </form>
   </div>
-  <div class="policy-container">
-    <div class="policy-one">
-      <h1>POLICY 1</h1>
-      <div class="container">
-        <h2>Password Generator</h2>
-        <div class="result-container">
-          <span class='field' id="result"></span>
-          <button class="btn" id="clipboard">
-            <i class="fa-solid fa-clipboard"></i>
+  <div class="container2">
+    <header class="cont_header">Play around with the three policies then kindly note your preferred policy</header>
+    <p class="cont_pol_p">Check the password strength of your preferred policy in the indicator</p>
+    <div class="policy-container">
+      <div class="policy-one">
+        <h1>POLICY 1</h1>
+        <div class="container">
+          <h2>Password Generator</h2>
+          <div class="result-container">
+            <span class='field' id="result"></span>
+            <button class="btn" id="clipboard">
+              <i class="fa-solid fa-clipboard"></i>
+            </button>
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <label>Password length</label>
+              <input type="number" id="length" min='4' max='20' value='6' />
+            </div>
+            <div class="setting">
+              <label>Include uppercase letters</label>
+              <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+              <label>Include lowercase letters</label>
+              <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+              <label>Include numbers</label>
+              <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+              <label>Include symbols</label>
+              <input type="checkbox" id="symbols" checked />
+            </div>
+          </div>
+          <button class="btn btn-large" id="generate">
+            Generate password
           </button>
         </div>
-        <div class="settings">
-          <div class="setting">
-            <label>Password length</label>
-            <input type="number" id="length" min='4' max='20' value='6' />
-          </div>
-          <div class="setting">
-            <label>Include uppercase letters</label>
-            <input type="checkbox" id="uppercase" checked />
-          </div>
-          <div class="setting">
-            <label>Include lowercase letters</label>
-            <input type="checkbox" id="lowercase" checked />
-          </div>
-          <div class="setting">
-            <label>Include numbers</label>
-            <input type="checkbox" id="numbers" checked />
-          </div>
-          <div class="setting">
-            <label>Include symbols</label>
-            <input type="checkbox" id="symbols" checked />
-          </div>
-        </div>
-        <button class="btn btn-large" id="generate">
-          Generate password
-        </button>
+  
       </div>
-
-    </div>
-    <!-- end of policy 1 -->
-    <!-- start of Policy 2 -->
-    <div class="policy-two">
-      <h1>POLICY 2</h1>
-      <div class="container">
-        <h2>Three Word Password Generator</h2>
-        <div class="result-container">
-          <span class="field" id="result-2"></span>
-          <button class="btn" id="clipboard2">
-            <i class="far fa-clipboard"></i>
+      <!-- end of policy 1 -->
+      <!-- start of Policy 2 -->
+      <div class="policy-two">
+        <h1>POLICY 2</h1>
+        <div class="container">
+          <h2>3 random words, symbol and number</h2>
+          <div class="result-container">
+            <span class="field" id="result-2"></span>
+            <button class="btn" id="clipboard2">
+              <i class="far fa-clipboard"></i>
+            </button>
+          </div>
+          <button class="btn btn-large" id="generate-2">
+            Generate three word password
           </button>
         </div>
-        <button class="btn btn-large" id="generate-2">
-          Generate three word password
-        </button>
+  
       </div>
-
-    </div>
-    <!-- end of policy 2 -->
-    <!-- start of policy 3 -->
-    <div class="policy-three">
-      <h1>POLICY 3</h1>
-      <div class="container">
-        <h2>Password Strengthener</h2>
-        <form action="#">
-          <div class="field">
-            <input onkeyup="triggerThree()" id="input3" type="password" placeholder="Enter weak password">
-            <span class="showBtn-3">SHOW</span>
+      <!-- end of policy 2 -->
+      <!-- start of policy 3 -->
+      <div class="policy-three">
+        <h1>POLICY 3</h1>
+        <div class="container">
+          <h2>Password Strengthener</h2>
+          <p>Type a password and generate a stronger password with it</p>
+          <form action="#">
+            <div class="field">
+              <input onkeyup="triggerThree()" id="input3" type="password" placeholder="Enter weak password">
+              <span class="showBtn-3">SHOW</span>
+            </div>
+          </form>
+          <div class="result-container">
+            <span class="field" id="result-3"></span>
+            <button class="btn" id="clipboard-3">
+              <i class="far fa-clipboard"></i>
+            </button>
           </div>
-        </form>
-        <div class="result-container">
-          <span class="field" id="result-3"></span>
-          <button class="btn" id="clipboard-3">
-            <i class="far fa-clipboard"></i>
+          <button class="btn btn-large" id="generate-3">
+            Generate Stronger Password
           </button>
         </div>
-        <button class="btn btn-large" id="generate-3">
-          Generate Stronger Password
-        </button>
+  
       </div>
-
+      <!-- end of policy 3 -->
     </div>
-    <!-- end of policy 3 -->
+
   </div>
   
   <div class="survey">To take a survey, click<a target="_blank" href="https://sunduni.eu.qualtrics.com/jfe/form/SV_0qCbq35K5Wzxo2y"> here</a></div>
